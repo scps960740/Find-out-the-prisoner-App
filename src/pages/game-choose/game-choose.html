@@ -1,0 +1,70 @@
+<!--
+  Generated template for the GameChoosePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>選 擇 人 數 與 類 別</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="ionBg" padding>
+
+
+      <div style="margin-top:15%" class="ChooseTitle">
+        請 選 擇
+      </div>
+
+      <div class="FamliySub">
+        遊 玩 人 數 與 類 別
+      </div>
+     
+
+
+  <ion-list>
+      <ion-item>
+        <ion-label>人數</ion-label>
+        <ion-select [(ngModel)]="Count" interface="popover">
+          <ion-option value="6">6</ion-option>
+          <ion-option value="7">7</ion-option>
+          <ion-option value="8">8</ion-option>
+          <ion-option value="9">9</ion-option>
+          <ion-option value="10">10</ion-option>
+          <ion-option value="11">11</ion-option>
+          <ion-option value="12">12</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+          <ion-label>題目類別</ion-label>
+          <ion-select [(ngModel)]="GameClass" interface="popover">
+            <ion-option value="T1">人物/娛樂題</ion-option>
+            <ion-option value="T2">美食題</ion-option>
+            <ion-option value="T3">語文/知識題</ion-option>
+            <ion-option value="T4">生活題</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+        <div class="ChooseImgFlex">
+
+            <!-- <div class="Logo">
+                <img src="assets/imgs/NGameLogo.png" alt="">
+            </div> -->
+
+                   
+          <div style="margin-top:5%" (click)="GameStart()" class="GoBtn">
+            遊 戲 開 始
+            <ion-icon class="IconGo" name="arrow-dropright"></ion-icon>
+          </div>
+        </div>
+     
+
+</ion-content>
